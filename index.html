@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8f769399bdeb4db88c304b0aa69ecfa5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8f769399bdeb4db88c304b0aa69ecfa5" ></div>
+        
+</body>
+<script>    
+    
+            var map_8f769399bdeb4db88c304b0aa69ecfa5 = L.map(
+                "map_8f769399bdeb4db88c304b0aa69ecfa5",
+                {
+                    center: [36.486537445238824, 127.25364111212832],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fec6658487104b9fba86eef8bc942039 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8f769399bdeb4db88c304b0aa69ecfa5);
+        
+    
+            var marker_8404b159a3964c25ba5ca436ddbaae40 = L.marker(
+                [36.486537445238824, 127.25364111212832],
+                {}
+            ).addTo(map_8f769399bdeb4db88c304b0aa69ecfa5);
+        
+    
+            var icon_1ca86cb10bb5404d95b804ee0b6455c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8404b159a3964c25ba5ca436ddbaae40.setIcon(icon_1ca86cb10bb5404d95b804ee0b6455c0);
+        
+    
+        var popup_36cff801e87148e6a934198b9c16f538 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_716d781dfa554ac4988680d6b2738cac = $(`<div id="html_716d781dfa554ac4988680d6b2738cac" style="width: 100.0%; height: 100.0%;">우리집</div>`)[0];
+            popup_36cff801e87148e6a934198b9c16f538.setContent(html_716d781dfa554ac4988680d6b2738cac);
+        
+
+        marker_8404b159a3964c25ba5ca436ddbaae40.bindPopup(popup_36cff801e87148e6a934198b9c16f538)
+        ;
+
+        
+    
+</script>
